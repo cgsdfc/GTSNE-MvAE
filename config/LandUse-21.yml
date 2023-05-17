@@ -1,0 +1,23 @@
+global:
+  device: cpu
+  savedir: output/exp/
+  seed: 123
+  debug: false
+
+model:
+  hidden_dims: 128
+  perplexity: 10
+  use_mlp: false
+  lamda: 0.1
+
+train:
+  lr: 0.001
+  epochs: 200
+  eval_epochs: 10
+  batch_size: 128
+
+dataset:
+  datadir: data
+  dataname: LandUse-21
+  incomplete_ratio: 0.5
+  views: [1, 2]
