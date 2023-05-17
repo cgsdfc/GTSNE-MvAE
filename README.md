@@ -1,6 +1,6 @@
 # Graph t-SNE Multi-view Autoencoder (GTSNE-MvAE)
 
-![framework](framework/framework.png)
+![framework](framework/framework.jpg)
 
 
 ## TL;DR
