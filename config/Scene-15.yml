@@ -1,5 +1,5 @@
 global:
-  device: cpu
+  device: 0
   savedir: output/exp/
   seed: 123
   debug: false
@@ -15,6 +15,7 @@ train:
   epochs: 200
   eval_epochs: 10
   batch_size: 256
+  before: false
 
 dataset:
   datadir: data

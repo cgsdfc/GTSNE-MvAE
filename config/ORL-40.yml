@@ -1,5 +1,5 @@
 global:
-  device: cpu
+  device: 0
   savedir: output/exp/
   seed: 123
   debug: false
@@ -9,10 +9,11 @@ model:
   perplexity: 10
   use_mlp: false
   lamda: 0.1
+  before: false
 
 train:
   lr: 0.001
-  epochs: 100
+  epochs: 500
   eval_epochs: 10
   batch_size: 128
 
