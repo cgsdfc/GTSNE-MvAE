@@ -7,7 +7,20 @@
 
 This is the PyTorch implementation of the GTSNE-MvAE model for joint clustering and completion of incomplete multi-view data. The core idea is to formulate the view completion task as a multi-view multivariate regression problem and augment a multi-view autoencoder for both completion and clustering. The augmentation is based on the graph convolutional layer and t-SNE loss, inspired by the graph t-SNE technique. We further improve the augmentation by imposing the regularization *after-fusion* of individual representations, which proves to be useful.
 
-## Run our code
+## Data Accessiblity
+
+The six datasets used in our experiments can be downloaded from [here](https://drive.google.com/file/d/19bgnpR7C87OixQbRwI7UJH-pZzYzIEl0/view?usp=sharing).
+```
+data
+├── COIL-20.mat
+├── Caltech101-20.mat
+├── Digits-10.mat
+├── LandUse-21.mat
+├── ORL-40.mat
+└── Scene-15.mat
+```
+
+## Run the code
 
 ```
 pip install -r requirements.txt
